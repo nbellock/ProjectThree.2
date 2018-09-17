@@ -1,19 +1,19 @@
 {
   "name": "nyt-react",
   "version": "1.0.0",
-  "description": "New York Times Web App made with the MERN (MongoDB, Express, React, and Node) Stack",
+  "description": "Venue Finder (MongoDB, Express, React, and Node) Stack",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marioaburto10/nyt-react.git"
+    "url": "git+https://github.com/nbellock/ProjectThree.2.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marioaburto10/nyt-react/issues"
+    "url": "https://github.com/nbellock/ProjectThree.2/issues"
   },
-  "homepage": "https://github.com/marioaburto10/nyt-react#readme",
+  "homepage": "ttps://github.com/nbellock/ProjectThree.2",
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "^4.15.4",

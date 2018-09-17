@@ -1,3 +1,4 @@
+//
 var mongoose = require("mongoose");
 
 var Schema = mongoose.Schema;
@@ -13,7 +14,7 @@ var VenueSchema = new Schema({
     type: String
   },
   reference: {
-  	type: String
+    type: String
   }
 });
 

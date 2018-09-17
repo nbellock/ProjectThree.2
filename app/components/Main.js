@@ -1,12 +1,12 @@
 import React from "react";
 
-import {Link} from "react-router";
+import { Link } from "react-router";
 
 class Main extends React.Component {
 
-	render() {
-		return (
-			<div className="main-container">
+  render() {
+    return (
+      <div className="main-container">
         <div className="container">
           {/* Navbar */}
           <nav className="navbar navbar-default" role="navigation">
@@ -28,7 +28,7 @@ class Main extends React.Component {
 
               <div className="collapse navbar-collapse navbar-ex1-collapse">
                 <ul className="nav navbar-nav navbar-right">
-                  {/* Using <Link> in place of <a> and "to" in place of "href" */}
+                  {/* Using <LInk> in place of <a> and "to" in place of "href" */}
                   <li><Link to="/search">Search</Link></li>
                   <li><Link to="/saved">Saved Venues</Link></li>
                   <li><a href="https://github.com/marioaburto10/react-venue-finder">Github Repo</a></li>
@@ -45,7 +45,7 @@ class Main extends React.Component {
           </div>
 
 
-          {/* Here will deploy the sub components (Search or Saved */}
+          {/* HEre will deploy the sub components (Search or Saved */}
           {/* These sub-components are getting passed as this.props.children */}
           {this.props.children}
 
@@ -58,9 +58,9 @@ class Main extends React.Component {
           </footer>
         </div>
       </div>
-		)
+    )
 
-	}
+  }
 }
 
 export default Main;

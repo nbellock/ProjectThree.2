@@ -7,7 +7,7 @@ class Search extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { 
+		this.state = {
 			results: ""
 		};
 
@@ -15,8 +15,8 @@ class Search extends React.Component {
 
 	}
 
-	setTerms(keyword, zipCode, radius){
-		console.log("received in Search ", keyword, zipCode, radius);
+	setTerms(keyword, zipCode, radius) {
+		console.log("rEceived in Search ", keyword, zipCode, radius);
 
 		helpers.getLongAndLat(zipCode).then((data) => {
 
@@ -26,8 +26,8 @@ class Search extends React.Component {
 
 
 			helpers.findVenues(keyword, lat, lng, radius).then((data) => {
-				console.log("data coming from setTerms findVenues" , data)
-				this.setState({results: data});
+				console.log("data coming from setTerms findVenues", data)
+				this.setState({ results: data });
 			})
 		});
 	}
@@ -36,10 +36,10 @@ class Search extends React.Component {
 		return (
 			<div className="main-container">
 
-		        <Query setTerms={this.setTerms} />
+				<Query setTerms={this.setTerms} />
 
-		        <Results results={this.state.results} />
-	      	</div>
+				<Results results={this.state.results} />
+			</div>
 		)
 	}
 }
